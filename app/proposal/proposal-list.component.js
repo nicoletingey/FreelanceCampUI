@@ -9,8 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var proposal_1 = require('./proposal');
 var ProposalListComponent = (function () {
     function ProposalListComponent() {
+        this.proposalOne = new proposal_1.Proposal(15, 'NBC NEWS', 'http://portfolio.nicoletingey.com', 'Ruby on Rails', 200, 20, 10, 'nbcnews@nbc.com');
+        this.proposalTwo = new proposal_1.Proposal(300, 'R and R Plumbing', 'http://portfolio.nicoletingey.com', 'Javascript', 100, 120, 10, 'randr@gmail.com');
+        this.proposalThree = new proposal_1.Proposal(99, 'Chip Cookies', 'http://portfolio.nicoletingey.com', 'HTML', 300, 220, 10, 'chip@cookies.com');
+        this.proposals = [
+            this.proposalOne,
+            this.proposalTwo,
+            this.proposalThree
+        ];
     }
     ProposalListComponent = __decorate([
         core_1.Component({
