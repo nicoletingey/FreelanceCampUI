@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-@Component ({
+@Component({
 	moduleId: module.id,
 	selector: 'app',
 	templateUrl: 'app.component.html'
